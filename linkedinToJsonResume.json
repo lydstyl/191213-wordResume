@@ -1,0 +1,331 @@
+{
+  "basics": {
+    "name": "Gabriel Brun",
+    "label": "Je suis à l'écoute d'une mission en React.js uniquement dans le nord ou en remote et à temps partiel pour la fin d'année 2019.  Mon CV et Portfolio : www.developpeur-react-nord.com",
+    "picture": "",
+    "email": "",
+    "phone": "",
+    "website": "",
+    "summary": "Internet",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "FR",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "[GTALK:lydstyl@gmail.com]",
+        "url": "https://twitter.com/[GTALK:lydstyl@gmail.com]"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Indépendant",
+      "position": "Développeur React.js",
+      "website": "",
+      "startDate": "2019-07-01",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "altima°",
+      "position": "Développeur Salesforce Commerce Cloud",
+      "website": "",
+      "startDate": "2017-06-01",
+      "summary": "Contribuer à la création et à l'évolution des sites BASH et BABYLISS : - Développer en front-end (CSS, Javascript) - Développer en back-end (Demandware / Sales Force Commerce Cloud qui est similaire à Javascript)",
+      "highlights": [],
+      "endDate": "2019-06-01"
+    },
+    {
+      "company": "Capgemini",
+      "position": "Ingénieur Logiciel",
+      "website": "",
+      "startDate": "2017-02-01",
+      "summary": "- Utiliser la technologie Demandware / Sales Force Commerce Cloud - Résoudre des tickets (TMA) sur des sites de e-commerce (Pimkie, Cassis, Paprika) - Utiliser Bitbucket, Sourcetree et Visual Studio Team Services - Corriger des bugs en Javascript - Modifier des templates front responsives - Utiliser SaaS, LESS et gulp.js - Créer et réaliser des tests fonctionnels (Total, Oney Bank)",
+      "highlights": [],
+      "endDate": "2017-06-01"
+    },
+    {
+      "company": "M2i Formation professionnalisante",
+      "position": "Développeur web",
+      "website": "",
+      "startDate": "2016-10-01",
+      "summary": "A l'issue de ce stage, le Développeur Full-Stack est en mesure de maîtriser les principales technologies et les principaux langages de programmation actuellement utilisés afin d'intervenir à la fois sur le Front-End et le Back-End des sites internet et/ou applications. Ses points forts seront la diversité de ses compétences et ses capacités d'adaptation. La formation permettra également de développer le savoir-être et le sens du service en entreprise.",
+      "highlights": [],
+      "endDate": "2017-02-01"
+    },
+    {
+      "company": "DSV",
+      "position": "Customer Service Assistant",
+      "website": "",
+      "startDate": "2016-07-01",
+      "summary": "- Manage transport of goods for the cosmetic company ELISABETH ARDEN. - Inform and assist hauliers and customers.",
+      "highlights": [],
+      "endDate": "2016-09-01"
+    },
+    {
+      "company": "EDF",
+      "position": "Commercial assistant",
+      "website": "",
+      "startDate": "2015-10-01",
+      "summary": "- Make estimates / contracts (software Cloé). - Phone or email customers. - Inform, answer and assist customers.",
+      "highlights": [],
+      "endDate": "2016-06-01"
+    },
+    {
+      "company": "SUPER DIET",
+      "position": "Export manager",
+      "website": "",
+      "startDate": "2015-07-01",
+      "summary": "- Manage relationships with customers, freight forwarders and carriers in French, English and Spanish. - Follow orders from SAP input until delivery via litigation management and billing (turnover about 200 000 € per month). - Organize transportations of the goods. - Manage shipping documents including shipping customs formalities. - Manage relationships with banks for documentary letter of credit. - Manage restocking and billing of off-set stocks.",
+      "highlights": [],
+      "endDate": "2015-09-01"
+    },
+    {
+      "company": "NOLLET LASER",
+      "position": "Commercial Assistant",
+      "website": "",
+      "startDate": "2014-02-01",
+      "summary": "- Helps employees of an industrial sheet metal - Answer the phone, inform the customer, create an account, update databases, enter a sales order (using specifics databases and softwares) send an acknowledgment, a Proforma invoice or a delivery bill - Sort technical drawings, quotes and work orders - Manage non-conformities and credit notes - Send a purchase order - Manage transports",
+      "highlights": [],
+      "endDate": "2014-06-01"
+    },
+    {
+      "company": "TRENOIS DECAMPS",
+      "position": "Logistics Employee",
+      "website": "",
+      "startDate": "2013-11-01",
+      "summary": "- Print a preparation note - Receipt of the goods : handle, control quality and quantity (28 000 hardware and construction's references)  - Sort and store, use a laser gun",
+      "highlights": [],
+      "endDate": "2014-01-01"
+    },
+    {
+      "company": "ALDENTE",
+      "position": "Business Creator, Restaurant's manager",
+      "website": "",
+      "startDate": "2009-10-01",
+      "summary": "- Starting a business from a business plan - Prepare restaurant before the arrival of customers - Enter invoices with accounting software CEGID - Prospect in B to C and B to B  - Sale",
+      "highlights": [],
+      "endDate": "2013-10-01"
+    },
+    {
+      "company": "STANDARD INDUSTRIE",
+      "position": "Industrial Purchaser",
+      "website": "",
+      "startDate": "2007-09-01",
+      "summary": "- Develop specifications for the manufacture of flow and conveying equipment or construction sites - International Sourcing international (France, Germany, Romania, China, etc.) - Make tenders ; use an ERP - Negotiate  - Send and follow orders to their reception - Manage disputes, ISO 9001 certified company - Evaluate suppliers - Manage stock - Send goods all over the world using Incoterms",
+      "highlights": [],
+      "endDate": "2009-06-01"
+    },
+    {
+      "company": "MONMAJORDOME",
+      "position": "Purchaser Assistant",
+      "website": "",
+      "startDate": "2007-02-01",
+      "summary": "INTERNSHIP - Purchase services for company corporate concierge - Study the feasibility and profitability - Implement new services for customers",
+      "highlights": [],
+      "endDate": "2007-06-01"
+    },
+    {
+      "company": "RGA CONSULTING",
+      "position": "Purchaser Assistant",
+      "website": "",
+      "startDate": "2005-05-01",
+      "summary": "INTERNSHIP - Develop a software for managing customers's purchases - Make appointments with suppliers to create a products catalog",
+      "highlights": [],
+      "endDate": "2005-07-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "French Secondary School",
+      "area": "",
+      "studyType": "Scientific French Secondary School diploma",
+      "startDate": "Invalid date",
+      "gpa": "",
+      "courses": [],
+      "endDate": "Invalid date"
+    },
+    {
+      "institution": "M2I",
+      "area": "",
+      "studyType": "",
+      "startDate": "Invalid date",
+      "gpa": "",
+      "courses": [],
+      "endDate": "Invalid date"
+    },
+    {
+      "institution": "M2I FORMATION",
+      "area": "",
+      "studyType": "Développeur Full-Stack",
+      "startDate": "2016-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2017-01-01"
+    },
+    {
+      "institution": "University Institute of Technology of Roubaix",
+      "area": "",
+      "studyType": "Three-year University Degree in Purchasing Management",
+      "startDate": "2006-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2007-01-01"
+    },
+    {
+      "institution": "University Institute of Technology of Valenciennes",
+      "area": "",
+      "studyType": "University Institute of Technology in Marketing Techniques",
+      "startDate": "2003-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2005-01-01"
+    },
+    {
+      "institution": "Computer Institute and Enterprise (Sandwich Courses)",
+      "area": "",
+      "studyType": "",
+      "startDate": "2002-01-01",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2002-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gestion de projet",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "NoSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Django",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CodeIgniter",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bootstrap",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SASS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Photoshop",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "VBA",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Anglais",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Sales Force Commerce Cloud",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Gatsby.js",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Anglais",
+      "fluency": "Full professional proficiency"
+    },
+    {
+      "language": "Français",
+      "fluency": "Native or bilingual proficiency"
+    }
+  ]
+}
