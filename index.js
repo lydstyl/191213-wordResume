@@ -5,12 +5,18 @@ const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
 
+const dateFormat = require('dateformat');
+
+function compare(a, b) {
+  if (a.begin < b.begin) return 1;
+  return -1;
+}
+
 fs.readFile(
   '/home/lyd/APPS-SCRIPTS/190907-developpeur-react-nord/src/markdown-pages/cv.md',
   'utf8',
   (err, data) => {
     if (err) throw err;
-    console.log(yamlFront.loadFront(data));
 
     //Load the docx file as a binary
     var content = fs.readFileSync(
@@ -23,16 +29,36 @@ fs.readFile(
     var doc = new Docxtemplater();
     doc.loadZip(zip);
 
-    const { description, objectif } = yamlFront.loadFront(data);
+    const { description, objectif, skills, experience } = yamlFront.loadFront(
+      data
+    );
 
-    //set the templateVariables
     doc.setData({
-      // first_name: 'John',
-      // last_name: 'Doe',
-      // phone: '0652455478',
-      // description: 'New Website',
       description,
-      objectif
+      objectif,
+      mainSkills: skills.main
+        .map(skill => `${skill.title}: ${skill.rate}/10`)
+        .join(', '),
+      otherSkills: skills.other
+        .map(skill => `${skill.title}: ${skill.rate}/10`)
+        .join(', '),
+      experience: experience
+        .map(
+          xp =>
+            `${dateFormat(xp.begin, 'mm/yyyy')} à ${dateFormat(
+              xp.end,
+              'mm/yyyy'
+            )} ${xp.job} ${xp.company}`
+        )
+        .join('; '),
+      experiences: experience.sort(compare).map(xp => {
+        return {
+          begin: dateFormat(xp.begin, 'mm/yyyy'),
+          end: dateFormat(xp.end, 'mm/yyyy'),
+          company: xp.company,
+          job: xp.job
+        };
+      })
     });
 
     try {
