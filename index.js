@@ -18,18 +18,18 @@ fs.readFile(
   (err, data) => {
     if (err) throw err;
 
-    //Load the docx file as a binary
-    var content = fs.readFileSync(
+    //NORMAL RESUME
+    const content = fs.readFileSync(
       path.resolve(__dirname, 'input.docx'),
       'binary'
     );
 
-    var zip = new PizZip(content);
+    const zip = new PizZip(content);
 
-    var doc = new Docxtemplater();
+    const doc = new Docxtemplater();
     doc.loadZip(zip);
 
-    const { description, objectif, skills, experience } = yamlFront.loadFront(
+    let { description, objectif, skills, experience } = yamlFront.loadFront(
       data
     );
 
@@ -39,33 +39,62 @@ fs.readFile(
       mainSkills: skills.main
         .map(skill => `${skill.title}: ${skill.rate}/10`)
         .join(', '),
-      otherSkills: skills.other
-        .map(skill => `${skill.title}: ${skill.rate}/10`)
-        .join(', '),
-      experience: experience
-        .map(
-          xp =>
-            `${dateFormat(xp.begin, 'mm/yyyy')} à ${dateFormat(
-              xp.end,
-              'mm/yyyy'
-            )} ${xp.job} ${xp.company}`
-        )
-        .join('; '),
+      otherSkills: skills.other.map(skill => `${skill.title}`).join(', '),
       experiences: experience.sort(compare).map(xp => {
         return {
           begin: dateFormat(xp.begin, 'mm/yyyy'),
           end: dateFormat(xp.end, 'mm/yyyy'),
           company: xp.company,
-          job: xp.job
+          job: xp.job,
+          tasks: xp.body.split('\n').map(task => {
+            return { task };
+          })
+        };
+      })
+    });
+
+    //ANONYME RESUME
+    const anonymeContent = fs.readFileSync(
+      path.resolve(__dirname, 'anonymeTemplate.docx'),
+      'binary'
+    );
+
+    const anonymeZip = new PizZip(anonymeContent);
+
+    const anonymeDoc = new Docxtemplater();
+    anonymeDoc.loadZip(anonymeZip);
+
+    description = yamlFront.loadFront(data).description;
+    objectif = yamlFront.loadFront(data).objectif;
+    skills = yamlFront.loadFront(data).skills;
+    experience = yamlFront.loadFront(data).experience;
+
+    anonymeDoc.setData({
+      description: description.replace('Gabriel Brun', 'X'),
+      objectif,
+      mainSkills: skills.main
+        .map(skill => `${skill.title}: ${skill.rate}/10`)
+        .join(', '),
+      otherSkills: skills.other.map(skill => `${skill.title}`).join(', '),
+      experiences: experience.sort(compare).map(xp => {
+        return {
+          begin: dateFormat(xp.begin, 'mm/yyyy'),
+          end: dateFormat(xp.end, 'mm/yyyy'),
+          company: 'Entreprise X',
+          job: xp.job,
+          tasks: xp.body.split('\n').map(task => {
+            return { task };
+          })
         };
       })
     });
 
     try {
-      // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+      // replace all occurences in document
       doc.render();
+      anonymeDoc.render();
     } catch (error) {
-      var e = {
+      const e = {
         message: error.message,
         name: error.name,
         stack: error.stack,
@@ -76,9 +105,11 @@ fs.readFile(
       throw error;
     }
 
-    var buf = doc.getZip().generate({ type: 'nodebuffer' });
+    const buf = doc.getZip().generate({ type: 'nodebuffer' });
+    const buf2 = anonymeDoc.getZip().generate({ type: 'nodebuffer' });
 
     // buf is a nodejs buffer, you can either write it to a file or do anything else with it.
-    fs.writeFileSync(path.resolve(__dirname, 'output.docx'), buf);
+    fs.writeFileSync(path.resolve(__dirname, 'CV_Gabriel_Brun.docx'), buf);
+    fs.writeFileSync(path.resolve(__dirname, 'CV_Anonyme.docx'), buf2);
   }
 );
